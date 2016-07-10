@@ -4,7 +4,7 @@
   "description": "track serials watching progress",
   "license": "MIT",
   "scripts": {
-    "dev-server": "node dev-server.js"
+    "start": "node dev-server.js"
   },
   "engines": {
     "node": "4.4.7",
