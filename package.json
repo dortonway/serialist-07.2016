@@ -1,0 +1,27 @@
+{
+  "name": "serialist",
+  "version": "1.0.0",
+  "description": "track serials watching progress",
+  "license": "MIT",
+  "scripts": {
+    "dev-server": "node dev-server.js"
+  },
+  "engines": {
+    "node": "4.4.7",
+    "npm": "3.10.5"
+  },
+  "author": "Ilia Pavlenkov",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "express": "^4.14.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
