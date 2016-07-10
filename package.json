@@ -2,6 +2,10 @@
   "name": "serialist",
   "version": "1.0.0",
   "description": "track serials watching progress",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dortonway/serialist-07.2016.git"
+  },
   "license": "MIT",
   "scripts": {
     "start": "node dev-server.js"
