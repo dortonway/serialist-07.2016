@@ -4,7 +4,8 @@ const webpackConfig = require('./webpack.development.config.js');
 
 new WebpackDevServer(webpack(webpackConfig), {
   publicPath: webpackConfig.output.publicPath,
-  hot: true
+  hot: true,
+  historyApiFallback: true
 }).listen(3000, 'localhost', (error) => {
   if (error) {
     console.log(`Error: ${error}`);
