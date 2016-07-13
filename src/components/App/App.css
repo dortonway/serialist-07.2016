@@ -1,3 +1,15 @@
 .app {
-  background-color: #0086b3;
+  height: 100vh;
+  background-color: #070e22;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  background-color: #000000;
+  width: 700px;
+  margin: 0 auto;
+  height: 100vh;
+  box-shadow: 0 -2px 43px 0 rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
 }

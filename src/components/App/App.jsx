@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import Header from '../Header/Header.jsx';
 import styles from './App.css';
 
 export default class App extends React.Component {
@@ -8,7 +9,10 @@ export default class App extends React.Component {
 
     return (
       <div className={ styles.app }>
-        { children }
+        <div className={ styles.content }>
+          <Header />
+          { children }
+        </div>
       </div>
     );
   }

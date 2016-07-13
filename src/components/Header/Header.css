@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  padding: 0 70px;
+  margin-bottom: 30px;
+}
+
+.item {
+  text-align: center;
+  padding: 30px 30px 6px;
+  margin: 0 auto;
+  font-size: 30px;
+  border-bottom: 3px #c2b1f0 dashed;
+}
+
+.item:hover {
+  border-bottom: 3px #2a2de8 solid;
+}
+
+._active {
+  border-bottom: 3px #c2b1f0 solid;
+}
