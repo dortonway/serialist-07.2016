@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import configureStore from './store/configureStore.jsx';
 import { Router, Route, browserHistory, Redirect } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
-import App from './containers/App.jsx';
+import App from './components/App/App.jsx';
 import Serials from './containers/Serials.jsx';
 import Movies from './containers/Movies.jsx';
 import NotFound from './components/NotFound/NotFound.jsx';

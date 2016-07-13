@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import styles from './App.css';
 
 export default class App extends React.Component {
 
@@ -6,7 +7,7 @@ export default class App extends React.Component {
     const { children } = this.props;
 
     return (
-      <div>
+      <div className={ styles.app }>
         { children }
       </div>
     );
