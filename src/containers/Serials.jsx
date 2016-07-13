@@ -1,9 +1,17 @@
 import React, { PropTypes } from 'react';
+import WatchingStatuses from '../components/WatchingStatuses/WatchingStatuses.jsx';
 
-export default class Serials extends React.Component {
+const Serials = ({
+    children
+  }) => (
+    <div>
+      <WatchingStatuses />
+      { children }
+    </div>
+);
 
-  render() {
-    return <p>Serials</p>;
-  }
+Serials.propTypes = {
+  children: PropTypes.object.isRequired
+};
 
-}
+export default Serials;

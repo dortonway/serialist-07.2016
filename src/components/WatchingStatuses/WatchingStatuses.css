@@ -1,0 +1,19 @@
+.watchingStatuses {
+  display: flex;
+  justify-content: center;
+}
+
+.watchingStatus {
+  padding: 5px 15px;
+  border: 1px solid;
+  margin: 10px 5px;
+}
+
+._active {
+  border: 1px #c2b1f0 solid;
+  color: #c2b1f0;
+}
+
+._active:hover {
+  border: 1px #2a2de8 solid;
+}
