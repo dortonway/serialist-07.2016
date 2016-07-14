@@ -1,0 +1,14 @@
+.serial {
+  border-bottom: 1px #a34acd solid;
+  padding: 10px 0;
+  width: 476px;
+}
+
+.serial:last-of-type {
+  margin-bottom: 20px;
+}
+
+.toWatch {
+  margin: 0 auto;
+  width: 476px;
+}

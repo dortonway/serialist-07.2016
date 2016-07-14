@@ -21,10 +21,11 @@ const Serials = ({
     </div>
 );
 
-Serials.propTypes = {
+Serials.PropTypes = {
   children: PropTypes.object.isRequired,
   serials: PropTypes.array.isRequired,
-  actions: PropTypes.object.isRequired
+  actions: PropTypes.object.isRequired,
+  resetForm: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {

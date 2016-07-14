@@ -18,7 +18,7 @@ class AddSerial extends React.Component {
 
     return (
       <form onSubmit={ (e) => e.preventDefault() }>
-        <input type="text" className={ styles.input } { ...serialName } />
+        <input type="text" className={ styles.input } { ...serialName } placeholder="New serial name" />
         <Button value="Add" onClick={ this.onButtonClick.bind(this) } />
       </form>
     );
