@@ -4,7 +4,7 @@ const serials = (state = [], action) => {
   switch(action.type) {
 
     case actionTypes.ADD_SERIAL:
-      return [...state, { name: action.name, watchingType: 'to_watch' }];
+      return [...state, { name: action.name, watchingStatus: 'to_watch' }];
 
     default:
       return state;
