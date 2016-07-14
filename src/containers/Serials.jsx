@@ -4,6 +4,7 @@ import * as ActionCreators from '../actions/serials.jsx';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { reset as resetForm } from 'redux-form';
+import Header from '../components/Header/Header.jsx';
 
 const Serials = ({
     children,
@@ -12,6 +13,7 @@ const Serials = ({
     resetForm
   }) => (
     <div>
+      <Header activeType="serials" />
       <WatchingStatuses />
       { children && React.cloneElement(children, {
         serials,

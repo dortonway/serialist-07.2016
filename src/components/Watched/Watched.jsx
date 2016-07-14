@@ -3,7 +3,7 @@ import styles from './Watched.css';
 
 const Watched = () => (
   <div>
-    Watched
+    Watched page hasn't been developed yet
   </div>
 );
 
