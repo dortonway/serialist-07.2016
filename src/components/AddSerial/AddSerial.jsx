@@ -4,32 +4,26 @@ import styles from './AddSerial.css';
 import { reduxForm } from 'redux-form';
 import Button from '../Button/Button.jsx';
 
-class AddSerial extends React.Component {
+const AddSerial = ({
+    onAdd,
+    resetForm,
+    fields: { serialName }
+  }) => (
+    <form onSubmit={ (e) => e.preventDefault() }>
+      <input type="text" className={ styles.input } { ...serialName } placeholder="New serial name" />
+      <Button value="Add" onClick={ () => onButtonClick(onAdd, resetForm, serialName) } />
+    </form>
+);
 
-  onButtonClick() {
-    const { onAdd, resetForm, fields: { serialName } } = this.props;
-
-    onAdd(serialName.value);
-    resetForm('addSerial');
-  }
-
-  render() {
-    const { fields: { serialName } } = this.props;
-
-    return (
-      <form onSubmit={ (e) => e.preventDefault() }>
-        <input type="text" className={ styles.input } { ...serialName } placeholder="New serial name" />
-        <Button value="Add" onClick={ this.onButtonClick.bind(this) } />
-      </form>
-    );
-  }
-
-}
-
-AddSerial.PropTyps = {
+AddSerial.PropTypes = {
   onSubmit: PropTypes.func.isRequired,
   resetForm: PropTypes.func.isRequired
 };
+
+function onButtonClick(onAdd, resetForm, serialName) {
+  onAdd(serialName.value);
+  resetForm('addSerial');
+}
 
 export default reduxForm({
   form: 'addSerial',
